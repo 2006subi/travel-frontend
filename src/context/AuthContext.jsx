@@ -8,7 +8,7 @@ export const AuthContextProvider = ({ children }) => {
     JSON.parse(localStorage.getItem("user")) || null
   );
   const login = async (inputs) => {
-    const res = await axios.post("https://travel-backend-7k8o.onrender.com", inputs,{
+    const res = await axios.post("https://travel-backend-7k8o.onrender.com/auth/login", {"email":"arshu20@gmail.com","password":"sabi@20"},{
       headers: {
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*"

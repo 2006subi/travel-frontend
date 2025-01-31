@@ -42,7 +42,7 @@ const Bookings = ({ price ,title}) => {
           bookAt: credentials.bookAt
         });
         try {
-          await axios.post(`https://travel-backend-7k8o.onrender.com`, 
+          await axios.post(`https://travel-backend-7k8o.onrender.com/`, 
           {
             userEmail: credentials.userEmail,
             tourName: tourName, 

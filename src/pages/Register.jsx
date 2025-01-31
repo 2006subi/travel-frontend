@@ -21,7 +21,11 @@ const Register = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     await axios
-      .post("https://travel-backend-7k8o.onrender.com", data, {
+      .post("https://travel-backend-7k8o.onrender.com/auth/register",{
+        "username":"varshu2",
+        "email":"varshu2@gmail.com",
+        "password":"Sabi@20-"
+    } , {
         headers: {
           "Content-Type": "application/json",
         },
